@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2860D8B0-AA4C-4B51-8015-9F97D7B2E6A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Auth.GG_Winform_Example</RootNamespace>
+    <AssemblyName>Shutter CR</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Shutter CR.ico</ApplicationIcon>
+    <StartupObject>ShutterCR.Program</StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DDSReader">
+      <HintPath>C:\Users\Loki\Desktop\Shutter CR\DDSReader.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing">
+      
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.1.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.1.Core">
+      
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.1">
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v20.1">
+      
+    </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>C:\Users\Loki\Desktop\Shutter CR\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="JRPC">
+      <HintPath>C:\Users\Loki\Desktop\here\tut booter panel\Discord Bot Update List\bin\Debug\JRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SafeGuard">
+      <HintPath>C:\Users\Loki\Desktop\Shutter CR\SafeGuard.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI">
+      <HintPath>C:\Users\Loki\Desktop\Shutter CR\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>C:\Users\Loki\Desktop\Shutter CR\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="xdevkit">
+      <HintPath>D:\Ayo Gonzo\nginx-1.20.0\Mods\Xbox\RGH JTAG\Black Ops II\Mod Tools\TCM's Multi-COD Tool Cracked By Nebula\xdevkit.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\GG_Winform_Example\LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\GG_Winform_Example\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Auth\GG_Winform_Example\LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\GG_Winform_Example\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\GG_Winform_Example\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\GG_Winform_Example\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
